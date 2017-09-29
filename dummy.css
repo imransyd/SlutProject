@@ -1,25 +1,26 @@
 #flex{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#box1{
+  position: relative;
 }
 
 h1{
   font-size: 50px;
   font-style: italic;
   text-align: center;
+  align-content: center;
+  width: 100%;
 }
 
 #box2{
   margin: auto;
-  height: auto;
-
-}
-
-
-#box3{
-  margin: auto;
   border: 4px;
-  
+  margin-left: auto;
 }
 
 button {
