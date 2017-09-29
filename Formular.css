@@ -5,26 +5,46 @@
   justify-content: center;
 }
 
-#box1{
-  position: relative;
+h1{
+ font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%; 
 }
 
-h1{
-  font-size: 50px;
+input{
+  font-size: 18px;
   font-style: italic;
   text-align: center;
   align-content: center;
   width: 100%;
 }
+select{
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+}
 
-#box2{
-  margin: auto;
+#box1{
+   margin: auto;
   border: 4px;
   margin-left: auto;
 }
 
-button{
-  display: inline-block;
+p{
+  font-size: 15px;
+  font-style: normal;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  width: 100%; 
+}
+
+button{ display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
@@ -41,6 +61,3 @@ button:hover {background-color: wheat}
 button:active {
   transform: translateY(4px);
 }
-
-
-
