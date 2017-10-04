@@ -1,3 +1,14 @@
+body {
+  background-image: url("https://wallpaperstock.net/dbs-in-the-mountains-wallpapers_9781_1920x1440.jpg");
+  width: 100%;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
 #flex{
   display: flex;
   flex-direction: column;
@@ -61,6 +72,7 @@ button{ display: inline-block;
   background-color: gray;
   border: none;
   border-radius: 15px;
+  margin: 20px;
 }
 
 button:hover {background-color: wheat}
