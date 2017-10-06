@@ -1,0 +1,105 @@
+body {
+  background-image: url("https://wallpaperstock.net/dbs-in-the-mountains-wallpapers_9781_1920x1440.jpg");
+  width: 100%;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+#flex{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#flex2{
+  display: flex;
+  flex-direction: row;
+}
+
+h1{
+ font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%; 
+}
+
+input{
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+}
+select{
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+#box1{
+   margin: auto;
+  border: 4px;
+  margin-left: auto;
+}
+
+#box2{
+  margin: auto;
+  border: 4px;
+  margin-left: auto;
+}
+
+p{
+  font-size: 15px;
+  font-style: normal;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  width: 100%; 
+}
+
+#tillbaka{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+#tillbaka:hover {background-color: wheat}
+#tillbaka:active {
+  transform: translateY(4px);
+}
+
+button{ display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+  border-left: 20px;
+}
+
+button:hover {background-color: wheat}
+button:active {
+  transform: translateY(4px);
+}
+

@@ -1,4 +1,6 @@
 body {
+  background-image: url("http://racem.org/wp-content/uploads/2015/04/Volvo-v-1.jpg");
+  width: 100%;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -6,3 +8,120 @@ body {
 a {
   color: #00B7FF;
 }
+
+#flex{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1{
+ font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%; 
+}
+
+input{
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+}
+select{
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+#box1{
+   margin: auto;
+  border: 4px;
+  margin-left: auto;
+}
+
+#box2{
+  margin: auto;
+  border: 4px;
+  margin-left: auto;
+}
+
+p{
+  font-size: 15px;
+  font-style: normal;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  width: 100%; 
+}
+
+button{ display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+  left: 4px;
+}
+
+button:hover {background-color: wheat}
+button:active {
+  transform: translateY(4px);
+}
+
+#admin{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+  left: 4px; 
+}
+
+#admin:hover {background-color: wheat}
+#admin:active{
+  transform: translateY(4px);
+}
+
+
+#bokning{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+  left: 4px;
+}
+
+#bokning:hover {background-color: wheat}
+#bokning:active{
+  transform: translateY(4px);
+}
+
+
