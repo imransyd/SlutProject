@@ -8,8 +8,18 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var bokning = require('./routes/bokning');
 var ansokning = require('./routes/ansokning')
+var mongoose = require('mongoose');
 
 var app = express();
+
+var promise = mongoose.connect('mongodb://ECGrupp3:Frontend2016@cluster0-shard-00-00-dmlri.mongodb.net:27017,cluster0-shard-00-01-dmlri.mongodb.net:27017,cluster0-shard-00-02-dmlri.mongodb.net:27017/fordondb?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', {
+  useMongoClient: true,
+  /* other options */
+});
+/*mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://ECGrupp3:Frontend2016@cluster0-shard-00-00-dmlri.mongodb.net:27017,cluster0-shard-00-01-dmlri.mongodb.net:27017,cluster0-shard-00-02-dmlri.mongodb.net:27017/fordondb?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin')
+  .then(() =>  console.log('connection succesful'))
+  .catch((err) => console.error(err));*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,14 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/bokning', bokning);
 app.use('/ansokning', ansokning);
-
-/*var MongoClient = require('mongodb').MongoClient;
-
-MongoClient.connect('mongodb://ECGrupp3:Frontend2016@mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mongodb.net:27017,mycluster0-shard-00-02-wpeiv.mongodb.net:27017/fordonDB?ssl=true&replicaSet=Mycluster0-shard-0&authSource=admin', function(err, db) {
-    console.log("Databasen kopplad");
-  db.close();
-});*/
-
+ 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
