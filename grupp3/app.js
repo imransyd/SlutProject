@@ -29,10 +29,11 @@ app.use('/ansokning', ansokning);
 
 /*var MongoClient = require('mongodb').MongoClient;
 
-var uri = "mongodb://ECGrupp3:Frontend2016@mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mongodb.net:27017,mycluster0-shard-00-02-wpeiv.mongodb.net:27017/admin?ssl=true&replicaSet=Mycluster0-shard-0&authSource=admin";
-MongoClient.connect(uri, function(err, db) {
+MongoClient.connect('mongodb://ECGrupp3:Frontend2016@mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mongodb.net:27017,mycluster0-shard-00-02-wpeiv.mongodb.net:27017/fordonDB?ssl=true&replicaSet=Mycluster0-shard-0&authSource=admin', function(err, db) {
+    console.log("Databasen kopplad");
   db.close();
 });*/
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
