@@ -27,7 +27,7 @@ html(lang='en')
 		.container
 			.page-header
 				h1 Bilinformation
-				p.lead  Basic grid layouts to get you familiar with building within the Bootstrap grid system.
+				p.lead(id="p") Olssons fordon AB
 				input(type="button", value="Tillbaka", id="cta1", onclick="window.location.href='http://localhost:3000/'")
 				.row
 					.col-md-4
@@ -35,21 +35,19 @@ html(lang='en')
 							a(href="https://upload.wikimedia.org/wikipedia/commons/7/72/Mazda_323f_green_front_20080301.jpg", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/7/72/Mazda_323f_green_front_20080301.jpg", alt="IMG") 
 							.caption(id="bilInfor") 
-								p.lead 
-								| Fordonstyp: personbil 
-								br
-								| RequiredDrivingLicense: B
-								br
-								| brand: Mazda
-								br
-								| Model: 323i
-								br
-								| Year: 1991
-								br
-								| Gearbox: manuell
-								br
-								| Dagshyra: 298.
-								br
+								.table
+									.thead 
+										.tr 
+											.th Mazda
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td requiredDrivingLicense:B
+											.td Brand: Mazda
+											.td Model: 323i
+											.td Year: 1991
+											.td Gearbox: manuell
+											.td Dagshyra: 298
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 										
 					.col-md-4 
@@ -57,42 +55,38 @@ html(lang='en')
 							a(href="https://upload.wikimedia.org/wikipedia/commons/b/b3/Volvo-V40.jpg", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Volvo-V40.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead 
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								|Brand: Volvo
-								br
-								| Model: V40
-								br
-								| Year: 1997
-								br
-								| Dagshyra: 349
-								br
-								| Gearbox: manuell
-								br
+								.table
+									.thead 
+										.tr 
+											.th Volvo
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td requiredDrivingLicense:B
+											.td Brand: Volvo
+											.td Model: V40
+											.td Year: 1997
+											.td Gearbox: manuell
+											.td Dagshyra: 349
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://upload.wikimedia.org/wikipedia/commons/4/40/Peugeot_308_5-T%C3%BCrer_front.JPG", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/4/40/Peugeot_308_5-T%C3%BCrer_front.JPG", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead 
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Peugeot 
-								br
-								| Model: 308
-								br
-								| Year: 1997
-								br
-								| Dagshyra: 349
-								br
-								| Gearbox: manuell
-								br
+								.table
+									.thead 
+										.tr 
+											.th Peugeot
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td requiredDrivingLicense:B
+											.td Brand: Peugeot
+											.td Model: 308
+											.td Year: 1997
+											.td Gearbox: manuell
+											.td Dagshyra: 349
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 				.row
 					.col-md-4
@@ -100,65 +94,57 @@ html(lang='en')
 							a(href="https://upload.wikimedia.org/wikipedia/commons/6/6a/Mercedes-Benz_Atego_white_strasbourg.JPG", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Mercedes-Benz_Atego_white_strasbourg.JPG", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: tung lastbil
-								br
-								| RequiredDrivingLicense: CE
-								br
-								| Brand: Mercedes-Benz
-								br
-								| Model: Atego 8 16 L 4 x 2
-								br
-								| Year: 1995
-								br
-								| Dagshyra: 850
-								br
-								| Kommentarer*, Skador: "Större reva på högersida skåp."
-								br
+								.table
+									.thead 
+										.tr 
+											.th Mercedes-Benz
+									.tbody
+										.tr 
+											.td Fordonstyp:  tung lastbil
+											.td requiredDrivingLicense:CE
+											.td Brand: Mercedes-Benz
+											.td Model: Atego 8 16 L 4 x 2
+											.td Year: 1995
+											.td Dagshyra: 850
+											.td Kommentarer*, Skador: "Större reva på högersida skåp."
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://upload.wikimedia.org/wikipedia/commons/7/79/Audi_A4_B7_Avant_2.0_TDI.JPG", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/7/79/Audi_A4_B7_Avant_2.0_TDI.JPG", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B 
-								br
-								| Brand: Audi 
-								br
-								| Model: A4
-								br
-								| Gearbox: automat 
-								br
-								| Year: 2000
-								br
-								| Dagshyra: 398 
-								br
-								| Fuel: 95
-								br
+								.table
+									.thead 
+										.tr 
+											.th Audi
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td requiredDrivingLicense: B
+											.td Brand: Audi
+											.td Model: A4
+											.td Year: 2000
+											.td Dagshyra: 398
+											.td Fuel: 95
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Volvo_V50_--_04-20-2010.jpg", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Volvo_V50_--_04-20-2010.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Volvo
-								br
-								| Gearbox: manuell
-								br
-								| Model: S50
-								br
-								| Year: 2005
-								br
-								| Dagshyra: 498
-								br
+								.table
+									.thead 
+										.tr 
+											.th Volvo
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td requiredDrivingLicense: B
+											.td Brand: Volvo
+											.td Gearbox: manuell
+											.td Model: A4
+											.td Year: 2005
+											.td Dagshyra: 498
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 				.row
 					.col-md-4
@@ -166,57 +152,55 @@ html(lang='en')
 							a(href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/VW_LT35_2.5Tdi_2002.jpg/1200px-VW_LT35_2.5Tdi_2002.jpg", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/VW_LT35_2.5Tdi_2002.jpg/1200px-VW_LT35_2.5Tdi_2002.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: lätt lastbil
-								br
-								| Brand: Mercedez-Benz
-								br
-								| Model: Sprinter 316 CDI
-								br
-								| Year: 2003
-								br
-								| dagshyra: 498
-								br
+								.table
+									.thead 
+										.tr 
+											.th Mercedez-Benz
+									.tbody
+										.tr 
+											.td Fordonstyp: lätt lastbil
+											.td Brand: Mercedez-Benz
+											.td Gearbox: manuell
+											.td Model:  Sprinter 316 CDI
+											.td Year: 2003
+											.td Dagshyra: 498
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://s3-us-west-2.amazonaws.com/usedphotosuk/104091366_614.jpg", target="_blank")
 								img(src="https://s3-us-west-2.amazonaws.com/usedphotosuk/104091366_614.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: lätt lastbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Volvo
-								br
-								| Gearbox: manuell
-								br
-								| Model: S50
-								br
-								| Year: 2005
-								br
-								| Dagshyra: 498
-								br
+								.table
+									.thead 
+										.tr 
+											.th Volvo
+									.tbody
+										.tr 
+											.td Fordonstyp: lätt lastbil
+											.td RequiredDrivingLicense: B
+											.td Brand: Volvo
+											.td Gearbox: manuell
+											.td Model: S50
+											.td Year: 2005
+											.td Dagshyra: 498
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://i.ebayimg.com/00/s/MzJYMzI=/z/aIEAAOSwz3lZehX7/$_86.JPG", target="_blank")
 								img(src="https://i.ebayimg.com/00/s/MzJYMzI=/z/aIEAAOSwz3lZehX7/$_86.JPG", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: motorcykel
-								br
-								| RequiredDrivingLicense: A
-								br
-								| Brand: Yamaha
-								br
-								| Model: YCF R1
-								br
-								| Year: 2001
-								br
-								| Dagshyra: 498
-								br
+								.table
+									.thead 
+										.tr 
+											.th Yamaha
+									.tbody
+										.tr 
+											.td Fordonstyp: motorcykel
+											.td RequiredDrivingLicense: A
+											.td Brand: Yamaha
+											.td Model: YCF R1
+											.td Year: 2001
+											.td Dagshyra: 498
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 								
 				.row
@@ -226,114 +210,107 @@ html(lang='en')
 							a(href="https://upload.wikimedia.org/wikipedia/commons/e/e1/Toyota_Aygo_front_20071204.jpg", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Toyota_Aygo_front_20071204.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Toyota
-								br
-								| Model: Aygo
-								br
-								| Dagshyra: 198
-								br
+								.table
+									.thead 
+										.tr 
+											.th Toyota
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td RequiredDrivingLicense: B
+											.td Brand: Toyota
+											.td Model: Aygo
+											.td Dagshyra: 198
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="http://cdn.dealerspike.com/imglib/v1/800x600/imglib/Assets/Inventory/F3/69/F36930D2-46BF-43B8-93BB-ECAC2B7F1176.jpg", target="_blank")
 								img(src="http://cdn.dealerspike.com/imglib/v1/800x600/imglib/Assets/Inventory/F3/69/F36930D2-46BF-43B8-93BB-ECAC2B7F1176.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: ATV
-								br
-								| RequiredDrivingLicense: A1
-								br
-								| Brand: Can-Am
-								br
-								| Model: Outlander 570
-								br
-								| Year: 2008
-								br
-								| Dagshyra: 598
-								br
+								.table
+									.thead 
+										.tr 
+											.th Can-Am
+									.tbody
+										.tr 
+											.td Fordonstyp: ATV
+											.td RequiredDrivingLicense: A1
+											.td Brand: Can-Am
+											.td Model: Outlander 570
+											.td Year: 2008
+											.td Dagshyra: 598
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://imganuncios.mitula.net/2003_saab_9_3_linear_blackwood_nj_97530271686432250.jpg", target="_blank")
 								img(src="https://imganuncios.mitula.net/2003_saab_9_3_linear_blackwood_nj_97530271686432250.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Saab
-								br
-								| Model: 9-5 2.3 Super linear
-								br
-								| gearbox: automat
-								br
-								| Year: 2003
-								br
-								| Dagshyra: 198
-								br
+								.table
+									.thead 
+										.tr 
+											.th Saab
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td RequiredDrivingLicense: B
+											.td Brand: Saab
+											.td Model: 9-5 2.3 Super linear
+											.td Year: 2003
+											.td Dagshyra: 198
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://upload.wikimedia.org/wikipedia/commons/5/52/BRP_Can-Am_Spyder_Roadster_20100810c.JPG", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/5/52/BRP_Can-Am_Spyder_Roadster_20100810c.JPG", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: Trehjuling
-								br
-								| Brand: Can-Am
-								br
-								| Model: Spyder Roadster
-								br
-								| Year: 2015
-								br
-								| Dagshyra: 798
-								br
+								.table
+									.thead 
+										.tr 
+											.th Can-Am
+									.tbody
+										.tr 
+											.td Fordonstyp: Trehjuling
+											.td Brand: Can-Am
+											.td Model: Spyder Roadster
+											.td Year: 2015
+											.td Dagshyra: 798
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://upload.wikimedia.org/wikipedia/commons/e/eb/2011_Kia_Optima_Hybrid_--_05-19-2011.jpg", target="_blank")
 								img(src="https://upload.wikimedia.org/wikipedia/commons/e/eb/2011_Kia_Optima_Hybrid_--_05-19-2011.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Kia
-								br
-								| gearbox: manuell
-								br
-								| Model: Optima kombi
-								br
-								| Year: 2001
-								br
-								| Dagshyra: 498
-								br
+								.table
+									.thead 
+										.tr 
+											.th Kia
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td RequiredDrivingLicense: B
+											.td Brand: Kia
+											.td Gearbox: manuell
+											.td Model: Optima kombi
+											.td Year: 2001
+											.td Dagshyra: 498
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="http://heavycherry.com/imgs/a/b/g/r/l/fiat__ducato_2_8_jtd_maxi_2006_1_lgw.jpg", target="_blank")
 								img(src="http://heavycherry.com/imgs/a/b/g/r/l/fiat__ducato_2_8_jtd_maxi_2006_1_lgw.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: lätt lastbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Fiat
-								br
-								| Model: Ducato 2.3 Volymskåp maxi
-								br
-								| Year: 2006
-								br
-								| Dagshyra: 798
-								br
+								.table
+									.thead 
+										.tr 
+											.th Fiat
+									.tbody
+										.tr 
+											.td Fordonstyp: lätt lastbil
+											.td RequiredDrivingLicense: B
+											.td Brand: Fiat
+											.td Model: Ducato 2.3 Volymskåp maxi
+											.td Year: 2006
+											.td Dagshyra: 798
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 				.row
 								
@@ -342,65 +319,58 @@ html(lang='en')
 							a(href="http://image.bilgaraget.se/extra/carimg/576501_576600/toyota-aygo-576537_96480803.jpg", target="_blank")
 								img(src="http://image.bilgaraget.se/extra/carimg/576501_576600/toyota-aygo-576537_96480803.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Toyota
-								br
-								| Model: Aygo
-								br
-								| Year: 2009
-								br
-								| gearbox: manuell
-								br
-								| Dagshyra: 198
-								br
+								.table
+									.thead 
+										.tr 
+											.th Toyota
+									.tbody
+										.tr 
+											.td Fordonstyp: Toyota
+											.td RequiredDrivingLicense: B
+											.td Brand: Toyota
+											.td Model: Aygo
+											.td Year: 2009
+											.td gearbox: manuell
+											.td Dagshyra: 198
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="http://s3.amazonaws.com/digitaltrends-uploads-prod/2015/08/Volvo-C30-hatch.jpg", target="_blank")
 								img(src="http://s3.amazonaws.com/digitaltrends-uploads-prod/2015/08/Volvo-C30-hatch.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Volvo
-								br
-								| Model: c30
-								br
-								| Year: 2001
-								br
-								| Dagshyra: 225
-								br
-								| fuel: diesel  
-								br
-								| kommentarer*:  "skador": Backen är väldigt trög att få i.
-								br
+								.table
+									.thead 
+										.tr 
+											.th Volvo
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td RequiredDrivingLicense: B
+											.td Brand: Volvo
+											.td Model: c30
+											.td Year: 2001
+											.td Dagshyra: 225
+											.td Fuel: diesel
+											.td kommentarer*:  "skador": Backen är väldigt trög att få i.
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 					.col-md-4
 						.thumbnail
 							a(href="https://www.carpixel.net/w/2c8f1c2be6a4d487b8ebfe20f94182ac/volvo-v70-wallpaper-hd-31599.jpg", target="_blank")
 								img(src="https://www.carpixel.net/w/2c8f1c2be6a4d487b8ebfe20f94182ac/volvo-v70-wallpaper-hd-31599.jpg", alt="IMG")
 							.caption(id="bilInfor")
-								p.lead
-								| Fordonstyp: personbil
-								br
-								| RequiredDrivingLicense: B
-								br
-								| Brand: Volvo
-								br
-								| Model: v70
-								br
-								| Year: 1996
-								br
-								| Dagshyra: 298
-								br
-								| fuel: diesel
-								br
+								.table
+									.thead 
+										.tr 
+											.th Volvo
+									.tbody
+										.tr 
+											.td Fordonstyp: personbil
+											.td RequiredDrivingLicense: B
+											.td Brand: Volvo
+											.td Model: v70
+											.td Year: 1996
+											.td Dagshyra: 298
+											.td Fuel: diesel
 								input(type="button", value="Bokning", id="cta", onclick="window.location.href='http://localhost:3000/ansokning'")
 								
 								
