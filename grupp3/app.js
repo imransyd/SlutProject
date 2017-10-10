@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var kvitto = require('./routes/kvitto');
 var index = require('./routes/index');
 var bokning = require('./routes/bokning');
 var ansokning = require('./routes/ansokning')
@@ -37,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/bokning', bokning);
 app.use('/ansokning', ansokning);
+app.use('/kvitto', kvitto);
  
 
 // catch 404 and forward to error handler
