@@ -1,0 +1,73 @@
+body {
+  background-image: url("http://racem.org/wp-content/uploads/2015/04/Volvo-v-1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+  
+
+
+#flex2{
+  display: flex;
+  flex-direction: row;
+}
+
+#flexbox1{
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 10px;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+
+
+#flexboxtext{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#flexboximg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center
+}
+
+#flexbtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+input{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+input:hover {background-color: wheat}
+input:active {
+  transform: translateY(4px);
+}
+
+img{
+  width: 200px;
+  height: 200px;
+}

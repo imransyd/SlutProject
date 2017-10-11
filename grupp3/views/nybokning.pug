@@ -1,0 +1,31 @@
+head
+  title Nybokning
+  link(rel='stylesheet', href='/stylesheets/bokning.css')
+body
+  div(id="flex2")
+    div
+      input(type="button", value="tillbaka", id="tillbaka", onclick="window.location.href='http://localhost:3000/'")
+  each fordon in fordonlist
+    div(id="flexbox1")
+      div(id="flexboxtext")
+        h1 Fordon
+        div#fordon_list_item
+          h3 #{fordon.brand}
+            p Fordonstyp: #{fordon.fordonstyp}
+            p Körkort: #{fordon.requiredDrivingLicense}
+            p Märke: #{fordon.brand}
+            p Växellåda: #{fordon.gearbox}
+            p Modell: #{fordon.model}
+            p Årsmodell: #{fordon.year}
+            p Dagshyra: #{fordon.dagshyra}
+            p Bokad: #{fordon.bokad}
+      div(id="flexboximg")
+        img(src=fordon.imgLink alt="No img")
+        div(id="flexbtn")
+          input(type="button", value="bokning", id="bokning", onclick="window.location.href='http://localhost:3000/ansokning'")
+
+    
+     
+
+    
+      
