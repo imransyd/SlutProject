@@ -4,10 +4,9 @@ head
 body
   div(id="flex2") 
     div
-      input(type="button", value="tillbaka", id="tillbaka", onclick="window.location.href='http://localhost:3000/bokning'")
+      input(type="button", value="tillbaka", id="tillbaka", onclick="window.location.href='http://localhost:3000/nybokning'")
   div(id="flex")
     div(id="box1")
-      
       h1 Kundinformation
     div(id="box2")
       form
@@ -31,6 +30,17 @@ body
             p Danmark
           option(value="Finland")
             p Finland
-          input(type="button", value="Boka", id="bokning", onclick="window.location.href='http://localhost:3000/kvitto'")
+          input(type="submit", value="Boka", id="bokning", onclick="window.location.href='http://localhost:3000/kvitto'")
+    div(id="flexbox")
+      h3 #{märke}
+        p Fordonstyp: #{fordonstyp}
+        p Körkort: #{korkort}
+        p Märke: #{marke}
+        p Växellåda: #{vaxellada}
+        p Modell: #{modell}
+        p Årsmodell: #{arsmodell}
+        p Dagshyra: #{dagshyra}
+        p(id="hidden") id: #{id}
+ 
         
       

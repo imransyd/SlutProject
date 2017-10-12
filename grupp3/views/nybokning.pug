@@ -10,19 +10,34 @@ body
       div(id="flexboxtext")
         h1 Fordon
         div#fordon_list_item
-          h3 #{fordon.brand}
-            p Fordonstyp: #{fordon.fordonstyp}
-            p Körkort: #{fordon.requiredDrivingLicense}
-            p Märke: #{fordon.brand}
-            p Växellåda: #{fordon.gearbox}
-            p Modell: #{fordon.model}
-            p Årsmodell: #{fordon.year}
-            p Dagshyra: #{fordon.dagshyra}
-            p Bokad: #{fordon.bokad}
+          form(action="/process_post" method="POST")
+            h3 #{fordon.brand}
+              br
+              label(for="fordonstyp")="Fordonstyp:"
+              input(name="fordonstyp", value=fordon.fordonstyp,) 
+              label(for="korkort")="Körkort:"
+              input(name="korkort", value=fordon.requiredDrivingLicense)
+              label(for="marke")="Märke"
+              input(name="marke", value=fordon.brand)
+              label(for="vaxellada")="Växellåda:"
+              input(name="vaxellada", value=fordon.gearbox, disabled)
+              label(for="modell")="Modell" 
+              input(name="modell", value=fordon.model)
+              label(for="arsmodell")="Årsmodell"
+              input(name="arsmodell",value=fordon.year)
+              label(for="dagshyra")="Dagshyra"
+              input(name="dagshyra", value=fordon.dagshyra)
+              label(for="bokad")="Bokad"
+              input(name="bokad", value=fordon.bokad)
+              label(for="id")="Id"
+              input(name="id", id="hiddden", value=fordon._id)
+              input(type="submit", value="bokning")
       div(id="flexboximg")
         img(src=fordon.imgLink alt="No img")
         div(id="flexbtn")
-          input(type="button", value="bokning", id="bokning", onclick="window.location.href='http://localhost:3000/ansokning'")
+          
+          
+
 
     
      

@@ -47,27 +47,18 @@ body {
   align-content: center;
 }
 
-input{
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: black;
-  background-color: gray;
-  border: none;
-  border-radius: 15px;
-  margin-top: 20px;
-}
-
-input:hover {background-color: wheat}
-input:active {
-  transform: translateY(4px);
-}
 
 img{
   width: 200px;
   height: 200px;
+}
+
+input {
+  border: none;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  width: auto;
+  background-color: rgba(255,255,255,0.5);
 }

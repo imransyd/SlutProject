@@ -1,6 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb');
+var app = express();
+var bodyParser = require('body-parser');
+var ansokning = require('./ansokning');
+
+app.use(bodyParser.json());
+app.use('/ansokning', ansokning);
+
 
 
 MongoClient.connect('mongodb://ECGrupp3:Frontend2016@cluster0-shard-00-00-dmlri.mongodb.net:27017,cluster0-shard-00-01-dmlri.mongodb.net:27017,cluster0-shard-00-02-dmlri.mongodb.net:27017/fordondb?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', function(err, db){
@@ -26,9 +33,12 @@ router.get('/', function(req, res, next) {
             } else {
                 res.send('No documents found');
             }
-            db.close();
+            //db.close();
     })})})
   //res.render('index', { title: 'Express' });
 });
+
+
+
 
 module.exports = router;

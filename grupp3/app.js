@@ -39,12 +39,20 @@ app.use('/ansokning', ansokning);
 app.use('/kvitto', kvitto);
 app.use('/nybokning', nybokning);
 
+app.post('/process_post', function(req, res){
+  console.log("hej" + req.body.fordonstyp)
+  res.render('ansokning', {fordonstyp: req.body.fordonstyp, korkort: req.body.korkort, marke: req.body.marke, vaxellada: req.body.vaxellada, modell: req.body.modell, arsmodell: req.body.arsmodell, dagshyra: req.body.dagshyra, id: req.body.id})
+  
+})
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
+
+
 
 // error handler
 app.use(function(err, req, res, next) {
