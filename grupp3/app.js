@@ -9,18 +9,11 @@ var index = require('./routes/index');
 var ansokning = require('./routes/ansokning')
 var MongoClient = require('mongodb');
 var nybokning = require('./routes/nybokning');
+var ObjectId = require('mongodb').ObjectID;
 
 var app = express();
 
-MongoClient.connect('mongodb://ECGrupp3:Frontend2016@cluster0-shard-00-00-dmlri.mongodb.net:27017,cluster0-shard-00-01-dmlri.mongodb.net:27017,cluster0-shard-00-02-dmlri.mongodb.net:27017/fordondb?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', function(err, db){
-    if (err) throw err
-    
-    db.collection('fordon').find().toArray(function (err, result){
-        if (err) throw err
-        
-        console.log("working")
-    })
-})
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -47,16 +40,24 @@ app.post('/process_post', function(req, res){
 
 app.post('/kvitto', function(req, res){
   console.log("hallo" + req.body.id)
+    
+    MongoClient.connect('mongodb://ECGrupp3:Frontend2016@cluster0-shard-00-00-dmlri.mongodb.net:27017,cluster0-shard-00-01-dmlri.mongodb.net:27017,cluster0-shard-00-02-dmlri.mongodb.net:27017/fordondb?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', function(err, db){
+        if (err) throw err
+        var ObjId = "ObjectId"+'("'+req.body.id+'")';
+        console.log(ObjId);
+    try {
+        db.collection('fordon').update({"_id": ObjectId("59d28a7e687fe192b3ed98d0")},
+                            {
+            $set: {"bokad": "ja"}
+        })
+    }catch (e){
+        console.log(e);
+    }
+    })
   res.render('kvitto', {id: req.body.id, email: req.body.email})
   
 })
 
-app.put('/kvitto', function(req, res){
-    fordon.findByIdAndUpdate({_id: req.body.id},
-                            {
-        bokad: ja
-    })
-})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
