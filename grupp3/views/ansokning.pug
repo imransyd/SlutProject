@@ -9,17 +9,17 @@ body
     div(id="box1")
       h1 Kundinformation
     div(id="box2")
-      form
+      form(action="/kvitto" method="POST")
         p Email
-        input(id="email", type="text",)
+        input(name="email" id="email", type="text",)
         p Förnamn
-        input(id="fornamn", type="text")
+        input(name="fornamn" id="fornamn", type="text")
         p Efternamn
-        input(id="efternamn", type="text")
+        input(name="efternamn" id="efternamn", type="text")
         p Telefonnummer
-        input(id="tlf", type="text")
+        input(name="tlf" id="tlf", type="text")
         p Körkortsnummer/personnummer
-        input(id="personnummer", type="text")
+        input(name="personnummer" id="personnummer", type="text")
         p Land
         select
           option(value="Sverige")
@@ -30,7 +30,8 @@ body
             p Danmark
           option(value="Finland")
             p Finland
-          input(type="submit", value="Boka", id="bokning", onclick="window.location.href='http://localhost:3000/kvitto'")
+            input(name="id" id="hidden" value=id)
+          input(type="submit", value="Boka", id="bokning")
     div(id="flexbox")
       h3 #{märke}
         p Fordonstyp: #{fordonstyp}
@@ -40,7 +41,7 @@ body
         p Modell: #{modell}
         p Årsmodell: #{arsmodell}
         p Dagshyra: #{dagshyra}
-        p(id="hidden") id: #{id}
+        
  
         
       

@@ -45,6 +45,19 @@ app.post('/process_post', function(req, res){
   
 })
 
+app.post('/kvitto', function(req, res){
+  console.log("hallo" + req.body.id)
+  res.render('kvitto', {id: req.body.id, email: req.body.email})
+  
+})
+
+app.put('/kvitto', function(req, res){
+    fordon.findByIdAndUpdate({_id: req.body.id},
+                            {
+        bokad: ja
+    })
+})
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
