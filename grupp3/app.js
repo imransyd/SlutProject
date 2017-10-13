@@ -46,7 +46,7 @@ app.post('/kvitto', function(req, res){
         var ObjId = "ObjectId"+'("'+req.body.id+'")';
         console.log(ObjId);
     try {
-        db.collection('fordon').update({"_id": ObjectId("59d28a7e687fe192b3ed98d0")},
+        db.collection('fordon').update({"_id": ObjectId(req.body.id)},
                             {
             $set: {"bokad": "ja"}
         })
