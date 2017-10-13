@@ -1,19 +1,43 @@
 body {
-  background-image: url("http://racem.org/wp-content/uploads/2015/04/Volvo-v-1.jpg");
+  background-image: url("https://wallpaperstock.net/dbs-in-the-mountains-wallpapers_9781_1920x1440.jpg");
   width: 100%;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}
 
 #flex{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  width: 40%;
+}
+
+#flex2{
+  display: flex;
+  flex-direction: row;
+}
+
+#bigflex{
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 10px;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#flexbox{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+  border-bottom:  40px;
 }
 
 h1{
@@ -44,12 +68,14 @@ select{
    margin: auto;
   border: 4px;
   margin-left: auto;
+  display: flex;
 }
 
 #box2{
   margin: auto;
   border: 4px;
   margin-left: auto;
+  display: flex;
 }
 
 p{
@@ -59,6 +85,26 @@ p{
   align-content: center;
   font-weight: bold;
   width: 100%; 
+}
+
+#tillbaka{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#tillbaka:hover {background-color: wheat}
+#tillbaka:active {
+  transform: translateY(4px);
 }
 
 button{ display: inline-block;
@@ -72,35 +118,14 @@ button{ display: inline-block;
   background-color: gray;
   border: none;
   border-radius: 15px;
-  margin-top: 20px;
+  margin: 20px;
+  border-left: 20px;
 }
 
 button:hover {background-color: wheat}
 button:active {
   transform: translateY(4px);
 }
-
-#admin{
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: black;
-  background-color: gray;
-  border: none;
-  border-radius: 15px;
-  margin-top: 20px;
-   
-}
-
-#admin:hover {background-color: wheat}
-#admin:active{
-  transform: translateY(4px);
-}
-
 
 #bokning{
   display: inline-block;
@@ -121,6 +146,10 @@ button:active {
 #bokning:hover {background-color: wheat}
 #bokning:active{
   transform: translateY(4px);
+}
+
+#hidden{
+  visibility: hidden;
 }
 
 

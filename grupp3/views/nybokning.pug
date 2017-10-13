@@ -14,29 +14,36 @@ body
             h3 #{fordon.brand}
               br
               label(for="fordonstyp")="Fordonstyp:"
-              input(name="fordonstyp", value=fordon.fordonstyp,) 
-              label(for="korkort")="Körkort:"
+              input(name="fordonstyp", value=fordon.fordonstyp,)
+              br
+              label(for="korkort")="Körkort: "
               input(name="korkort", value=fordon.requiredDrivingLicense)
-              label(for="marke")="Märke"
+              br
+              label(for="marke")="Märke: "
               input(name="marke", value=fordon.brand)
-              label(for="vaxellada")="Växellåda:"
-              input(name="vaxellada", value=fordon.gearbox, disabled)
-              label(for="modell")="Modell" 
+              br
+              label(for="vaxellada")="Växellåda: "
+              input(name="vaxellada", value=fordon.gearbox)
+              br
+              label(for="modell")="Modell: " 
               input(name="modell", value=fordon.model)
-              label(for="arsmodell")="Årsmodell"
+              br
+              label(for="arsmodell")="Årsmodell: "
               input(name="arsmodell",value=fordon.year)
-              label(for="dagshyra")="Dagshyra"
+              br
+              label(for="dagshyra")="Dagshyra: "
               input(name="dagshyra", value=fordon.dagshyra)
-              label(for="bokad")="Bokad"
-              input(name="bokad", value=fordon.bokad)
-              label(for="id")="Id"
-              input(name="id", id="hiddden", value=fordon._id)
+              br
+              label(for="bokad")="Bokad: "
+              input(name="bokad", value=fordon.bokad, id=fordon._id)
+              label(for="id" id="hidden")="Id"
+              input(name="id", id="hidden", value=fordon._id)
               if fordon.bokad == "nej"
-                input(type="submit", value="bokning")
+                input(type="submit", value="bokning" id="bokning")
       div(id="flexboximg")
         img(src=fordon.imgLink alt="No img")
         div(id="flexbtn")
-          
+
           
 
 

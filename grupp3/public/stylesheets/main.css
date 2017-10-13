@@ -1,8 +1,12 @@
 body {
-  background-image: url("https://wallpaperstock.net/dbs-in-the-mountains-wallpapers_9781_1920x1440.jpg");
+  background-image: url("http://racem.org/wp-content/uploads/2015/04/Volvo-v-1.jpg");
   width: 100%;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
 }
 
 
@@ -13,9 +17,10 @@ body {
   justify-content: center;
 }
 
-#flex2{
+#flexbox{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1{
@@ -63,8 +68,7 @@ p{
   width: 100%; 
 }
 
-#tillbaka{
-  display: inline-block;
+button{ display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
@@ -78,12 +82,13 @@ p{
   margin-top: 20px;
 }
 
-#tillbaka:hover {background-color: wheat}
-#tillbaka:active {
+button:hover {background-color: wheat}
+button:active {
   transform: translateY(4px);
 }
 
-button{ display: inline-block;
+#admin{
+  display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
@@ -94,14 +99,15 @@ button{ display: inline-block;
   background-color: gray;
   border: none;
   border-radius: 15px;
-  margin: 20px;
-  border-left: 20px;
+  margin-top: 20px;
+   
 }
 
-button:hover {background-color: wheat}
-button:active {
+#admin:hover {background-color: wheat}
+#admin:active{
   transform: translateY(4px);
 }
+
 
 #bokning{
   display: inline-block;

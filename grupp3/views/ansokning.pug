@@ -1,15 +1,14 @@
 head
     title Ansökning
-    link(rel='stylesheet', href='/stylesheets/style2.css')
+    link(rel='stylesheet', href='/stylesheets/ansokning.css')
 body
   div(id="flex2") 
     div
       input(type="button", value="tillbaka", id="tillbaka", onclick="window.location.href='http://localhost:3000/nybokning'")
-  div(id="flex")
-    div(id="box1")
-      h1 Kundinformation
+  div(id="bigflex")
     div(id="box2")
       form(action="/kvitto" method="POST")
+        h1 Kundinformation
         p Email
         input(name="email" id="email", type="text",)
         p Förnamn
@@ -33,6 +32,7 @@ body
             input(name="id" id="hidden" value=id)
           input(type="submit", value="Boka", id="bokning")
     div(id="flexbox")
+      h1 Bil
       h3 #{märke}
         p Fordonstyp: #{fordonstyp}
         p Körkort: #{korkort}
@@ -41,7 +41,7 @@ body
         p Modell: #{modell}
         p Årsmodell: #{arsmodell}
         p Dagshyra: #{dagshyra}
-        
+
  
         
       

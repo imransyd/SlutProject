@@ -54,7 +54,7 @@ app.post('/kvitto', function(req, res){
         console.log(e);
     }
     })
-  res.render('kvitto', {id: req.body.id, email: req.body.email})
+  res.render('kvitto', {id: req.body.id, email: req.body.email, fordonstyp: req.body.fordonstyp, brand: req.body.brand, year: req.body.year, dagshyra: req.body.dagshyra, fuel: req.body.fuel, brand: req.body.brand})
   
 })
 
