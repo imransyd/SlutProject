@@ -31,7 +31,8 @@ body
               input(name="bokad", value=fordon.bokad)
               label(for="id")="Id"
               input(name="id", id="hiddden", value=fordon._id)
-              input(type="submit", value="bokning")
+              if fordon.bokad == "nej"
+                input(type="submit", value="bokning")
       div(id="flexboximg")
         img(src=fordon.imgLink alt="No img")
         div(id="flexbtn")
